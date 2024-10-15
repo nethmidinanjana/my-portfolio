@@ -17,13 +17,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} antialiased flex flex-col max-w-7xl mx-auto overflow-x-hidden px-8 min-h-screen dark:bg-[#081115] bg-[#547380]`}
+        className={`${geistSans.variable} antialiased dark:bg-[#081115] bg-[#547380] min-h-screen overflow-x-hidden`}
       >
         <ThemeProvider
           attribute="class"
@@ -31,8 +31,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NavBar />
-          {children}
+          <NavBar/>
+          <div className="flex justify-center">
+            <main className="w-full max-w-7xl flex-grow">{children}</main>
+          </div>
         </ThemeProvider>
       </body>
     </html>

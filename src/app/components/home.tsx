@@ -41,7 +41,7 @@ const montserrat_alternates = Montserrat_Alternates({
 
 function HomePage() {
   return (
-    <div className="text-black dark:text-white flex w-full h-auto justify-center items-center mt-20">
+    <div className="text-black dark:text-white flex w-full justify-center items-center h-screen relative mt-3">
       <div className="w-full flex flex-col justify-center items-start lg:w-1/2 md:w-1/2 xl:w-1/2 2xl:w-1/2">
         <div
           className={`text-5xl -mb-6 leading-none ms-10 text-white opacity-60 ${alegreya_sans.className}`}
@@ -115,9 +115,12 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 md:w-1/2 xl:w-1/2 2xl:w-1/2 bg-red-200">2</div>
+      <div className="w-full lg:w-1/2 md:w-1/2 xl:w-1/2 2xl:w-1/2 bg-red-200">
+        2
+      </div>
     </div>
   );
 }
+
 
 export default HomePage;
