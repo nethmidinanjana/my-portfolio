@@ -1,15 +1,17 @@
-import About from "./components/about"; 
+import About from "./components/about";
+import Contact from "./components/contact";
 import HomePage from "./components/home";
+import TechStack from "./components/tech-stack";
+import Works from "./components/works";
 
 export default function Home() {
   return (
     <main>
-      <div className="relative z-0">
-        <HomePage />
-      </div>
-      <div className="relative z-0"> 
-        <About />
-      </div>
+      <HomePage />
+      <About />
+      <Works/>
+      <TechStack/>
+      <Contact/>
     </main>
   );
 }

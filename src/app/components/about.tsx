@@ -15,7 +15,8 @@ export default function About() {
           About
         </span>
       </div>
-      <div className="w-10/12 relative z-10"> {/* z-10 to ensure this content is above the glitter divs */}
+      <div className="w-10/12 relative z-10">
+        
         <div className="flex items-end gap-7">
           <div className="flex-shrink-0">
             <span
@@ -26,8 +27,7 @@ export default function About() {
           </div>
           <div className="flex-grow border border-white opacity-15 mb-2"></div>
         </div>
-
-        <div className="px-">
+        <div >
           <p
             className={`mt-10 text-3xl ${montserrat_alternates.className} font-extralight`}
           >
@@ -40,43 +40,9 @@ export default function About() {
         </div>
       </div>
 
-      {/* Glitter Divs positioned below the content */}
-      <div
-  className="absolute"
-  style={{
-    width: '531px',
-    height: '223px',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    background: 'radial-gradient(circle, rgba(7, 255, 196, 1) 0%, rgba(7, 255, 196, 0.4) 40%, rgba(8, 17, 21, 0) 100%)',
-    borderRadius: '50%', // Makes it a perfect circle
-    zIndex: '1',
-    filter: 'blur(300px)', // Adds blur effect
-  }}
-></div>
+      <div className="absolute blur-div-1"></div>
 
-<div
-  className="absolute"
-  style={{
-    width: '571.33px',
-    height: '388.43px',
-    top: '60%',
-    left: '80%',
-    transform: 'translate(-50%, -50%)',
-    background: 'radial-gradient(circle, rgba(0, 220, 234, 1) 0%, rgba(0, 220, 234, 0.4) 40%, rgba(8, 17, 21, 0) 100%)',
-    borderRadius: '50%', // Makes it a perfect circle
-    zIndex: '1',
-    filter: 'blur(400px)', // Adds blur effect
-  }}
-></div>
-
-
-
-
-
-
+      <div className="absolute blur-div-2"></div>
     </div>
   );
 }
-

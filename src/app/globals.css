@@ -7,4 +7,70 @@
   transform: rotate(180deg);
 }
 
+.blur-div-1 {
+  width: 231px;
+  height: 123px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(7, 255, 196, 1) 0%,
+    rgba(7, 255, 196, 0.4) 40%,
+    rgba(8, 17, 21, 0) 100%
+  );
+  border-radius: 50%;
+  z-index: 10;
+  filter: blur(130px);
+  position: absolute;
+}
 
+.blur-div-2 {
+  width: 371.33px;
+  height: 288.43px;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 220, 234, 1) 0%,
+    rgba(0, 220, 234, 0.4) 40%,
+    rgba(8, 17, 21, 0) 100%
+  );
+  border-radius: 50%;
+  z-index: 10;
+  filter: blur(130px);
+  position: absolute;
+}
+
+.blur-div-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 0, 107, 1) 0%,
+    rgba(255, 0, 107, 0.4) 40%,
+    rgba(255, 0, 107, 0) 100%
+  );
+  filter: blur(500px);
+  z-index: 10;
+}
+
+.blur-div-4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 133, 1) 0%,
+    rgba(0, 255, 133, 0.4) 40%,
+    rgba(0, 255, 133, 0) 100%
+  );
+  filter: blur(500px);
+  z-index: 10;
+}

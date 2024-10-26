@@ -12,6 +12,7 @@ import linkedinicon from "@/public/linkedinicon.svg";
 import whatsappicon from "@/public/whtsappicon.svg";
 import emailicon from "@/public/emailicon.svg";
 import tiktokicon from "@/public/tiktokicon.svg";
+import profileImg from "@/public/profileimg.svg"
 
 import Image from "next/image";
 
@@ -115,8 +116,8 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 md:w-1/2 xl:w-1/2 2xl:w-1/2 bg-red-200">
-        2
+      <div className="w-full lg:w-1/2 md:w-1/2 xl:w-1/2 2xl:w-1/2 flex justify-center items-center">
+        <Image src={profileImg} alt="My image" width={300} height={300}/>
       </div>
     </div>
   );

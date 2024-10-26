@@ -1,0 +1,142 @@
+import { Montserrat_Alternates } from "next/font/google";
+import mongodbicon from "@/public/techStackIcons/mongo-svgrepo-com 2.svg";
+import nodeicon from "@/public/techStackIcons/nodejs.svg";
+import laravelicon from "@/public/techStackIcons/laravel-svgrepo-com 2.svg";
+import jqueryicon from "@/public/techStackIcons/jquery.svg";
+import tailwindicon from "@/public/techStackIcons/tailwind-svgrepo-com 2.svg";
+// import nextjsBlackicon from "@/public/techStackIcons/nextjs-black.svg";
+import nextjsWhiteicon from "@/public/techStackIcons/nextjs-white.svg";
+import reacteicon from "@/public/techStackIcons/react-svgrepo-com.svg";
+import jsicon from "@/public/techStackIcons/js-svgrepo-com.svg";
+import htmlicon from "@/public/techStackIcons/html-5-svgrepo-com.svg";
+import cssicon from "@/public/techStackIcons/css-3-svgrepo-com.svg";
+import javaicon from "@/public/techStackIcons/java-svgrepo-com.svg";
+import mysqlicon from "@/public/techStackIcons/mysql-svgrepo-com.svg";
+import dockericon from "@/public/techStackIcons/docker-svgrepo-com.svg";
+import nesticon from "@/public/techStackIcons/nestjs-svgrepo-com.svg";
+import Image from "next/image";
+
+const montserrat_alternates = Montserrat_Alternates({
+  weight: ["200", "400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export default function TechStack() {
+  return (
+    <div className="relative w-full h-screen mb-10">
+      <div className="blur-div-3"></div>
+
+      {/* Pin to top left corner (01) */}
+      <div className="absolute top-0 left-0 flex flex-col gap-6  z-50 w-auto h-auto">
+        <div className="flex gap-6">
+          <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center">
+            <Image src={reacteicon} alt="MongoDB Icon" width={50} height={50} />
+          </div>
+
+          <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center">
+            <Image src={nodeicon} alt="MongoDB Icon" width={60} height={60} />
+          </div>
+        </div>
+        <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center">
+          <Image
+            src={nextjsWhiteicon}
+            alt="MongoDB Icon"
+            width={50}
+            height={50}
+          />
+        </div>
+      </div>
+
+      {/* Pin to top right corner */}
+      <div className="absolute top-0 right-0 h-auto w-auto  flex flex-col gap-6 items-end z-50">
+        <div className="flex gap-6">
+          <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center">
+            <Image src={javaicon} alt="MongoDB Icon" width={50} height={50} />
+          </div>
+          <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center">
+            <Image src={jsicon} alt="MongoDB Icon" width={50} height={50} />
+          </div>
+          <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center mr-20">
+            <Image
+              src={laravelicon}
+              alt="MongoDB Icon"
+              width={45}
+              height={45}
+            />
+          </div>
+        </div>
+        <div className="flex gap-6">
+          <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center">
+            <Image src={jqueryicon} alt="MongoDB Icon" width={50} height={50} />
+          </div>
+          <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center">
+            <Image
+              src={tailwindicon}
+              alt="MongoDB Icon"
+              width={50}
+              height={50}
+            />
+          </div>
+        </div>
+        <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center">
+          <Image src={mongodbicon} alt="MongoDB Icon" width={50} height={50} />
+        </div>
+      </div>
+
+      {/* Fill entire parent */}
+      <div className="absolute inset-0 flex items-center justify-center z-50 flex-col">
+        <div
+          className={`text-7xl ${montserrat_alternates.className} font-extrabold text-center leading-[85.02px]`}
+        >
+          Filing your <br /> project{" "}
+          <span className="text-[#00DBB3]">
+            with my <br /> Tech Stack
+          </span>
+        </div>
+        <div
+          className={`text-3xl ${montserrat_alternates.className} font-medium text-center opacity-35 mt-4`}
+        >
+          Fueling Innovation with My Tech Stack
+        </div>
+      </div>
+
+      {/* Pin to bottom left corner */}
+      <div className="absolute bottom-0 left-0 h-auto w-auto gap-6 flex flex-col  z-50">
+        <div className="flex gap-6">
+          <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center">
+            <Image src={htmlicon} alt="MongoDB Icon" width={50} height={50} />
+          </div>
+          <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center">
+            <Image src={cssicon} alt="MongoDB Icon" width={50} height={50} />
+          </div>
+        </div>
+        <div className="flex gap-6">
+          <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center ml-8">
+            <Image src={mysqlicon} alt="MongoDB Icon" width={50} height={50} />
+          </div>
+          <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center">
+            <Image src={dockericon} alt="MongoDB Icon" width={50} height={50} />
+          </div>
+          <div className="border-2 rounded-3xl w-[90px] h-[90px] bg-[rgba(7,12,15,0.45)] border-[#9b989838] flex justify-center items-center">
+            <Image src={nesticon} alt="MongoDB Icon" width={50} height={50} />
+          </div>
+        </div>
+      </div>
+      <div className="blur-div-4"></div>
+      {/* Pin to bottom right corner */}
+      <div className="absolute bottom-0 right-0 h-auto w-auto flex flex-col  items-end z-20">
+        <label
+          className={`text-4xl ${montserrat_alternates.className} font-extrabold dark:text-[#FFFFFF1F] dark:text-opacity-15`}
+        >
+          #dev
+        </label>
+        <label
+          className={`text-xl ${montserrat_alternates.className} font-semibold dark:text-[#FFFFFF1F] dark:text-opacity-15`}
+        >
+          @nethmi_dinanjana
+        </label>
+      </div>
+    </div>
+  );
+}

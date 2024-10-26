@@ -18,7 +18,7 @@ const routes = [
 
 function NavBar() {
   return (
-    <header className="text-black dark:text-white w-full fixed top-0 left-0 z-50 flex justify-center bg-opacity-80 dark:bg-[#081115] bg-[#547380]">
+    <header className="text-black dark:text-white w-full fixed top-0 left-0  flex justify-center bg-opacity-80 dark:bg-[#081115] bg-[#547380]" style={{zIndex: 100}}>
       <div className="w-full max-w-7xl flex justify-end items-center px-8 py-4 mt-3">
         <ul className="flex gap-9">
           {routes.map((route) => (
