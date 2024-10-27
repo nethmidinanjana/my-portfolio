@@ -24,7 +24,7 @@ const montserrat_alternates = Montserrat_Alternates({
 
 export default function TechStack() {
   return (
-    <div className="relative w-full h-screen mb-10">
+    <div className="relative w-full h-screen mb-10 px-5">
       <div className="blur-div-3"></div>
 
       {/* Pin to top left corner (01) */}

@@ -10,7 +10,7 @@ const montserrat_alternates = Montserrat_Alternates({
 
 export default function Works() {
   return (
-    <div className="w-full flex flex-col h-auto py-20 justify-center items-center bg-[#081115]">
+    <div className="w-full flex flex-col h-auto py-20 justify-center items-center bg-[#081115] px-5">
       <span className={`text-4xl ${montserrat_alternates.className}`}>
         Works
       </span>

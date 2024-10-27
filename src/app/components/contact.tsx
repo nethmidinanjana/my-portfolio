@@ -14,7 +14,7 @@ const montserrat_alternates = Montserrat_Alternates({
 
 export default function Contact() {
   return (
-    <div className="py-36  flex items-center bg-[#081115]">
+    <div className="py-36  flex items-center bg-[#081115] px-5">
       {/* Contact details Div: Start */}
       <div className="w-1/2">
         <div className="pr-28">

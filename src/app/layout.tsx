@@ -5,6 +5,7 @@ import NavBar from "./components/navbar";
 import { ThemeProvider } from "@/context/theme-provider";
 import Footer from "./components/footer";
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -33,7 +34,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NavBar/>
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center">
             <main className="w-full max-w-7xl flex-grow">{children}</main>
           </div>
           <Footer/>
