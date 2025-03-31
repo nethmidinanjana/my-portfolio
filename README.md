@@ -1,4 +1,4 @@
-# Old Portfolio
+# Personal Portfolio
 
 A personal portfolio built using **Next.js** and **Tailwind CSS**, designed to showcase my web development skills with a simple and responsive layout.
 
