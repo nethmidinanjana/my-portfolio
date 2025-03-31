@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Old Portfolio
+
+A personal portfolio built using **Next.js** and **Tailwind CSS**, designed to showcase my web development skills with a simple and responsive layout.
+
+## Features
+
+- **Responsive Design**: The layout is fully responsive, providing an optimal viewing experience across all devices.
+- **Minimalistic Design**: A clean and simple design to highlight projects and skills.
+- **Next.js Framework**: Utilized Next.js for server-side rendering and fast page navigation.
+- **Tailwind CSS**: Used Tailwind CSS for custom styling and rapid UI development.
+
+## Technologies Used
+
+- **Next.js** - React framework for building the UI and handling routing.
+- **Tailwind CSS** - Utility-first CSS framework for styling.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the Repository**:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ```bash
+    git clone https://github.com/nethmidinanjana/my-portfolio.git
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Navigate into the project folder**:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    ```bash
+    cd my-portfolio
+    ```
 
-## Learn More
+3. **Install Dependencies**:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Run the Development Server**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    npm run dev
+    ```
