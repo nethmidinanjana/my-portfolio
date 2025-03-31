@@ -14,7 +14,7 @@ import linkedinicon from "@/public/linkedinicon.svg";
 import whatsappicon from "@/public/whtsappicon.svg";
 import emailicon from "@/public/emailicon.svg";
 import tiktokicon from "@/public/tiktokicon.svg";
-import profileImg from "@/public/my-img.svg";
+// import profileImg from "@/public/profileimg.svg";
 import Image from "next/image";
 
 // Font configurations
@@ -117,10 +117,10 @@ function HomePage() {
       {/* Intro div: End */}
 
       {/* Image div: Start */}
-      <div className="w-full lg:w-1/2 flex justify-center items-center bg-green-40 ">
-        <Image src={profileImg} alt="Profile image" width={400} height={400} />
-
-        {/* <div className="w-[300px] h-[300px] "></div> */}
+      <div className="w-full lg:w-1/2 flex justify-center items-center ">
+        {/* <Image src={profileImg} alt="Profile image" width={300} height={300} />
+         */}
+        <div className="w-[300px] h-[300px] bg-green-800"></div>
       </div>
       {/* Image div: End */}
     </div>

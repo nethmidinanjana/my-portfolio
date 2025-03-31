@@ -117,7 +117,7 @@ function HomePage() {
       {/* Intro div: End */}
 
       {/* Image div: Start */}
-      <div className="w-full lg:w-1/2 flex justify-center items-center bg-green-40 ">
+      <div className="w-full lg:w-1/2 flex justify-center items-center bg-green-400 ">
         <Image src={profileImg} alt="Profile image" width={400} height={400} />
 
         {/* <div className="w-[300px] h-[300px] "></div> */}

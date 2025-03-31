@@ -9,27 +9,28 @@ const montserrat_alternates = Montserrat_Alternates({
 
 export default function About() {
   return (
-    <div className="relative w-full flex h-auto px-10 py-20">
-      <div className="w-2/12">
+    <div className="relative w-full flex flex-wrap h-auto px-5 sm:px-10 py-20">
+      <div className="w-full sm:w-3/12 lg:w-2/12 mb-6 sm:mb-0">
         <span className={`text-4xl ${montserrat_alternates.className}`}>
           About
         </span>
       </div>
-      <div className="w-10/12 relative z-10">
-        
-        <div className="flex items-end gap-7">
+
+      <div className="w-full sm:w-9/12 lg:w-10/12 relative z-10">
+        <div className="flex flex-wrap items-end gap-7">
           <div className="flex-shrink-0">
             <span
-              className={`text-7xl ${montserrat_alternates.className} font-extrabold`}
+              className={`text-5xl sm:text-6xl lg:text-7xl ${montserrat_alternates.className} font-extrabold`}
             >
               Little bit <br /> about Me
             </span>
           </div>
           <div className="flex-grow border border-white opacity-15 mb-2"></div>
         </div>
-        <div >
+
+        <div>
           <p
-            className={`mt-10 text-3xl ${montserrat_alternates.className} font-extralight`}
+            className={`mt-10 text-lg sm:text-2xl lg:text-3xl ${montserrat_alternates.className} font-extralight`}
           >
             Hello, I'm Nethmi Dinanjana, a full-stack software engineer
             dedicated to crafting exceptional digital experiences. With
@@ -41,7 +42,6 @@ export default function About() {
       </div>
 
       <div className="absolute blur-div-1"></div>
-
       <div className="absolute blur-div-2"></div>
     </div>
   );

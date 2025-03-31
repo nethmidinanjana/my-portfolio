@@ -14,47 +14,46 @@ const montserrat_alternates = Montserrat_Alternates({
 
 export default function Contact() {
   return (
-    <div className="py-36  flex items-center bg-[#081115] px-5">
+    <div className="py-20 flex flex-wrap items-center bg-[#081115] px-5 sm:px-10">
       {/* Contact details Div: Start */}
-      <div className="w-1/2">
-        <div className="pr-28">
+      <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
+        <div className="lg:pr-28">
           <div
-            className={`text-[38px] ${montserrat_alternates.className} font-normal `}
+            className={`text-[32px] sm:text-[38px] ${montserrat_alternates.className} font-normal`}
           >
             Contact
           </div>
-
           <div
-            className={`text-[64px] ${montserrat_alternates.className} font-bold `}
+            className={`text-[48px] sm:text-[64px] ${montserrat_alternates.className} font-bold`}
           >
             Let’s Connect
           </div>
           <p
-            className={`text-[26px] ${montserrat_alternates.className} font-medium leading-[38px] mt-4`}
+            className={`text-[20px] sm:text-[26px] ${montserrat_alternates.className} font-medium leading-7 sm:leading-[38px] mt-4`}
           >
-            Drop your queries and i will get back to you as soon possible...
+            Drop your queries and I will get back to you as soon as possible...
           </p>
           <div
-            className={`text-3xl ${montserrat_alternates.className} font-light leading-[36.57px] mt-8 mb-1`}
+            className={`text-2xl sm:text-3xl ${montserrat_alternates.className} font-light leading-8 mt-8 mb-1`}
           >
             Send me an email:
           </div>
           <span
-            className={`text-[20px] ${montserrat_alternates.className} font-semibold text-[#00DBB3] `}
+            className={`text-lg sm:text-[20px] ${montserrat_alternates.className} font-semibold text-[#00DBB3]`}
           >
             nethmidinanjana@gmail.com
           </span>
           <div
-            className={`text-3xl ${montserrat_alternates.className} font-light leading-[36.57px] mt-8 mb-1`}
+            className={`text-2xl sm:text-3xl ${montserrat_alternates.className} font-light leading-8 mt-8 mb-1`}
           >
             Contact me:
           </div>
           <span
-            className={`text-[20px] ${montserrat_alternates.className} font-semibold text-[#00DBB3] `}
+            className={`text-lg sm:text-[20px] ${montserrat_alternates.className} font-semibold text-[#00DBB3]`}
           >
-            +94 71 879 7812{" "}
+            +94 71 879 7812
           </span>
-          <div className="mt-9 flex gap-5">
+          <div className="mt-6 flex gap-4 sm:gap-5">
             <SocialMediaConatct icon={githubicon} />
             <SocialMediaConatct icon={xicon} />
             <SocialMediaConatct icon={instaicon} />
@@ -63,84 +62,84 @@ export default function Contact() {
           </div>
         </div>
       </div>
-
       {/* Contact details Div: End */}
 
       {/* Contact form: Start */}
+<div className="w-full lg:w-1/2">
+  <div className="flex flex-col sm:flex-row gap-6 w-full">
+    <div className="flex flex-col w-full sm:w-1/2">
+      <span
+        className={`text-lg sm:text-[21px] ${montserrat_alternates.className} font-medium`}
+      >
+        First Name
+      </span>
+      <input
+        type="text"
+        className={`mt-2 bg-[rgba(16,23,27,0.96)] text-white px-6 py-3 sm:py-4 rounded-xl placeholder:text-gray-400 placeholder:font-normal ${montserrat_alternates.className}`}
+        placeholder="eg: Alex"
+      />
+    </div>
+    <div className="flex flex-col w-full sm:w-1/2">
+      <span
+        className={`text-lg sm:text-[21px] ${montserrat_alternates.className} font-medium`}
+      >
+        Last Name
+      </span>
+      <input
+        type="text"
+        className={`mt-2 bg-[rgba(16,23,27,0.96)] text-white px-6 py-3 sm:py-4 rounded-xl placeholder:text-gray-400 placeholder:font-normal ${montserrat_alternates.className}`}
+        placeholder="eg: Cray"
+      />
+    </div>
+  </div>
 
-      <div className="w-1/2">
-        <div className="flex gap-6 w-full">
-          <div className="flex flex-col w-full">
-            <span
-              className={`text-[21px] ${montserrat_alternates.className} font-medium  `}
-            >
-              First Name
-            </span>
-            <input
-              type="text"
-              className={`mt-2 bg-[rgba(16,23,27,0.96)] text-white px-6 py-4 rounded-xl placeholder:text-gray-400 placeholder:font-normal ${montserrat_alternates.className}`}
-              placeholder="eg: Alex"
-            />
-          </div>
-          <div className="flex flex-col w-full">
-            <span
-              className={`text-[21px] ${montserrat_alternates.className} font-medium  `}
-            >
-              Last Name
-            </span>
-            <input
-              type="text"
-              className={`mt-2 bg-[rgba(16,23,27,0.96)] text-white px-6 py-4 rounded-xl placeholder:text-gray-400 placeholder:font-normal ${montserrat_alternates.className}`}
-              placeholder="eg: Cray"
-            />
-          </div>
-        </div>
-        <div className="flex flex-col mt-5">
-          <span
-            className={`text-[21px] ${montserrat_alternates.className} font-medium  `}
-          >
-            Email
-          </span>
-          <input
-            type="text"
-            className={`mt-2 bg-[rgba(16,23,27,0.96)] text-white px-6 py-4 rounded-xl placeholder:text-gray-400 placeholder:font-normal ${montserrat_alternates.className}`}
-            placeholder="eg: example@domain.com"
-          />
-        </div>
-        <div className="flex flex-col mt-5">
-          <span
-            className={`text-[21px] ${montserrat_alternates.className} font-medium  `}
-          >
-            Subject
-          </span>
-          <input
-            type="text"
-            className={`mt-2 bg-[rgba(16,23,27,0.96)] text-white px-6 py-4 rounded-xl placeholder:text-gray-400 placeholder:font-normal ${montserrat_alternates.className}`}
-            placeholder="eg: Just saying hi"
-          />
-        </div>
-        <div className="flex flex-col mt-5">
-          <span
-            className={`text-[21px] ${montserrat_alternates.className} font-medium  `}
-          >
-            Message
-          </span>
-          <textarea
-            rows={5}
-            className={`mt-2 bg-[rgba(16,23,27,0.96)] text-white px-6 py-4 rounded-xl placeholder:text-gray-400 placeholder:font-normal ${montserrat_alternates.className}`}
-            placeholder="Let’s talk about..."
-          />
-        </div>
-        <div className="flex flex-col mt-5 w-full">
-          <button
-            className={`w-full dark:bg-[#00DBB3] py-3 rounded-xl text-xl ${montserrat_alternates.className} font-semibold`}
-          >
-            Send
-          </button>
-        </div>
-      </div>
+  {/* Other input fields */}
+  <div className="flex flex-col mt-5 w-full">
+    <span
+      className={`text-lg sm:text-[21px] ${montserrat_alternates.className} font-medium`}
+    >
+      Email
+    </span>
+    <input
+      type="text"
+      className={`mt-2 bg-[rgba(16,23,27,0.96)] text-white px-6 py-3 sm:py-4 rounded-xl placeholder:text-gray-400 placeholder:font-normal ${montserrat_alternates.className}`}
+      placeholder="eg: example@domain.com"
+    />
+  </div>
+  <div className="flex flex-col mt-5 w-full">
+    <span
+      className={`text-lg sm:text-[21px] ${montserrat_alternates.className} font-medium`}
+    >
+      Subject
+    </span>
+    <input
+      type="text"
+      className={`mt-2 bg-[rgba(16,23,27,0.96)] text-white px-6 py-3 sm:py-4 rounded-xl placeholder:text-gray-400 placeholder:font-normal ${montserrat_alternates.className}`}
+      placeholder="eg: Just saying hi"
+    />
+  </div>
+  <div className="flex flex-col mt-5 w-full">
+    <span
+      className={`text-lg sm:text-[21px] ${montserrat_alternates.className} font-medium`}
+    >
+      Message
+    </span>
+    <textarea
+      rows={5}
+      className={`mt-2 bg-[rgba(16,23,27,0.96)] text-white px-6 py-3 sm:py-4 rounded-xl placeholder:text-gray-400 placeholder:font-normal ${montserrat_alternates.className}`}
+      placeholder="Let’s talk about..."
+    />
+  </div>
+  <div className="flex flex-col mt-5 w-full">
+    <button
+      className={`w-full dark:bg-[#00DBB3] py-3 sm:py-4 rounded-xl text-lg sm:text-xl ${montserrat_alternates.className} font-semibold`}
+    >
+      Send
+    </button>
+  </div>
+</div>
+{/* Contact form: End */}
 
-      {/* Contact form: End */}
     </div>
   );
 }

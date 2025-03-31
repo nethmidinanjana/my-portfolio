@@ -1,12 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Montserrat_Alternates } from "next/font/google";
 import ProjectsSlider from "./projects-slider";
+import project1Img from "@/public/project1img.svg";
 
 const montserrat_alternates = Montserrat_Alternates({
   weight: ["200", "400", "700"],
   subsets: ["latin"],
   display: "swap",
 });
+
+const description =
+  "As a full-stack software engineer, I had the privilege to design and develop a dynamic and user-friendly charity event website. This project is not only a testament to my technical expertise but also a demonstration of my commitment to making a positive impact through technology.";
 
 export default function Works() {
   return (
@@ -15,11 +19,11 @@ export default function Works() {
         Works
       </span>
       <div className="mt-7">
-      <span
-        className={`text-7xl ${montserrat_alternates.className} font-extrabold`}
-      >
-        Explore my
-      </span>
+        <span
+          className={`text-7xl ${montserrat_alternates.className} font-extrabold`}
+        >
+          Explore my
+        </span>
       </div>
       <div className="flex items-end gap-7 w-full mt-2 mb-16">
         <div className="flex-grow border border-white opacity-15 mb-2"></div>
@@ -35,7 +39,12 @@ export default function Works() {
       </div>
 
       {/* Slider */}
-      <ProjectsSlider/>
+      <ProjectsSlider
+        image={project1Img}
+        description={description}
+        link="www.givedonor.com"
+        name="giveDonor"
+      />
     </div>
   );
 }
