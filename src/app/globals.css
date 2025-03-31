@@ -74,3 +74,23 @@
   filter: blur(500px);
   z-index: 10;
 }
+
+.text-xl-responsive {
+  font-size: calc(0.3rem + 2vw); /* Example for responsive text size */
+}
+
+.text-xxl-responsive {
+  font-size: calc(1.3rem + 4vw); /* Example for larger responsive text size */
+}
+
+.custom-padding {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+/* @media (min-width: 1345px) {
+  .custom-padding {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+} */
